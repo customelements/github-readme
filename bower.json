@@ -1,5 +1,5 @@
 {
-  "name": "github-readme",
+  "name": "github-readme-element",
   "description": "Polymer element that fetches GitHub README",
   "main": "github-readme.html",
   "dependencies": {
