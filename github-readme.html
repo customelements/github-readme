@@ -1,5 +1,6 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../iron-ajax/iron-ajax.html">
+<link rel="stylesheet" href="../github-markdown-css/github-markdown.css">
 
 <dom-module id="github-readme">
   <template>
@@ -15,9 +16,17 @@
       :host {
         display: block;
       }
+
+      .markdown-body {
+        box-sizing: border-box;
+        max-width: 980px;
+        min-width: 200px;
+        padding: 45px;
+        margin: 0 auto;
+      }
     </style>
 
-    <div id="readme"></div>
+    <div id="readme" class="markdown-body"></div>
   </template>
 
   <script>

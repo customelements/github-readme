@@ -4,7 +4,8 @@
   "main": "github-readme.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",
-    "iron-ajax": "~1.2.0"
+    "iron-ajax": "~1.2.0",
+    "github-markdown-css": "~2.3.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
