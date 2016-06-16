@@ -1,6 +1,7 @@
 {
   "name": "github-readme-element",
   "description": "Polymer element that fetches GitHub README",
+  "version": "1.0.0",
   "main": "github-readme.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",
