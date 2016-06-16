@@ -13,17 +13,21 @@
 
     <style is="custom-style" include="demo-pages-shared-styles">
     </style>
+    <style>
+      demo-snippet {
+        background: white;
+        max-width: 980px;
+        margin: 0 auto;
+      }
+    </style>
   </head>
   <body>
 
-    <div class="vertical-section-container centered">
-      <h3>Basic github-readme Demo</h3>
-      <demo-snippet>
-        <template>
-          <github-readme repo="zenorocha/clipboard.js"></github-readme>
-        </template>
-      </demo-snippet>
-    </div>
+    <demo-snippet>
+      <template>
+        <github-readme repo="zenorocha/clipboard.js"></github-readme>
+      </template>
+    </demo-snippet>
 
   </body>
 </html>
