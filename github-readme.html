@@ -1,13 +1,23 @@
 <link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-ajax/iron-ajax.html">
 
 <dom-module id="github-readme">
   <template>
+    <iron-ajax
+      auto
+      url="https://api.github.com/repos/[[repo]]/readme"
+      headers='{"Accept": "application/vnd.github.VERSION.html"}'
+      handle-as="text"
+      on-response="handleResponse">
+    </iron-ajax>
+
     <style>
       :host {
         display: block;
       }
     </style>
-    <h2>Hello [[prop1]]</h2>
+
+    <div id="readme"></div>
   </template>
 
   <script>
@@ -16,11 +26,15 @@
       is: 'github-readme',
 
       properties: {
-        prop1: {
+        repo: {
           type: String,
-          value: 'github-readme',
-        },
+          value: 'customelements/github-readme',
+        }
       },
+
+      handleResponse: function(e) {
+        this.$.readme.innerHTML = e.detail.response;
+      }
 
     });
   </script>
